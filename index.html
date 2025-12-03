@@ -9,45 +9,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body class="bg-neutral-900">
     <header
-      class="flex justify-center flex-col items-center p-10 gap-3 bg-neutral-800 border-b-2 border-b-solid border-b-neutral-700"
+      class="flex flex-col items-center p-10 gap-3 bg-neutral-800 border-b-2 border-neutral-700"
     >
       <div>
         <img
           src="assets/im.jpg"
           alt="my profile photo"
-          class="rounded-full h-40 border-2 border-solid border-black"
+          class="rounded-full h-32 sm:h-36 md:h-40 border-2 border-black"
         />
       </div>
 
-      <div>
+      <div class="text-center">
         <h1
-          class="text-white text-center m-[8px] font-bold text-[25px]"
-          style="font: Poppins, sans-serif"
+          class="text-white font-bold text-2xl sm:text-3xl"
+          style="font-family: Poppins, sans-serif"
         >
           Kevin Fernando
         </h1>
 
-        <span class="text-neutral-500"> Desenvolvedor de Software </span>
+        <span class="text-neutral-500 block">Programador</span>
 
-        <div class="flex justify-center gap-2.5 p-2">
+        <div class="flex justify-center gap-3 p-3">
           <img
-            class="cursor-pointer h-[35px] transition-all duration-300 border-2 border-solid rounded-[8px] border-transparent hover:scale-105 hover:border-white"
+            class="cursor-pointer h-9 transition-all duration-300 border-2 rounded-lg border-transparent hover:scale-105 hover:border-white"
             src="assets/icons/whatsapp.png"
             alt=""
           />
           <img
-            class="cursor-pointer h-[35px] transition-all duration-300 border-2 border-solid rounded-[8px] border-transparent hover:scale-105 hover:border-white"
+            class="cursor-pointer h-9 transition-all duration-300 border-2 rounded-lg border-transparent hover:scale-105 hover:border-white"
             src="assets/icons/linkedin.png"
             alt=""
           />
           <img
-            class="cursor-pointer h-[35px] transition-all duration-300 border-2 border-solid rounded-[8px] border-transparent hover:scale-105 hover:border-white"
+            class="cursor-pointer h-9 transition-all duration-300 border-2 rounded-lg border-transparent hover:scale-105 hover:border-white"
             src="assets/icons/github.png"
             alt=""
           />
@@ -55,16 +55,16 @@
       </div>
     </header>
 
-    <main class="flex justify-center items-center p-20 flex-col gap-5">
+    <main class="flex flex-col items-center p-6 sm:p-10 md:p-20 gap-5">
       <h1
-        class="text-white font-bold text-[35px]"
-        style="font: Poppins, sans-serif"
+        class="text-white font-bold text-3xl sm:text-4xl"
+        style="font-family: Poppins, sans-serif"
       >
         Sobre mim
       </h1>
 
       <p
-        class="border-solid border-2 border-white text-white tracking-tight p-5 w-[620px] bg-neutral-700/40 rounded-[18px]"
+        class="border-2 border-white text-white tracking-tight p-5 w-full max-w-xl bg-neutral-700/40 rounded-xl"
       >
         Me chamo Kevin, atualmente tenho 17 anos de idade e sou um estudante de
         Programação e Tecnologia da Informação. Tenho experiência suficiente
@@ -73,7 +73,7 @@
       </p>
 
       <p
-        class="border-solid border-2 border-white text-white p-5 w-[620px] bg-neutral-700/40 rounded-[18px]"
+        class="border-2 border-white text-white p-5 w-full max-w-xl bg-neutral-700/40 rounded-xl"
       >
         Desejo adquirir ainda mais experiẽncia como programador, e estou a
         disposição caso você tenha interesse em trabalhar comigo em algum
@@ -81,23 +81,114 @@
       </p>
     </main>
 
+    <div class="flex flex-col items-center gap-3 p-6">
+      <h1
+        class="text-white font-bold text-3xl sm:text-4xl p-3"
+        style="font-family: Poppins, sans-serif"
+      >
+        Meus projetos
+      </h1>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl"
+      >
+        <div class="bg-neutral-800 rounded-2xl p-5 border-solid border-2 border-transparent transition-all duration-300 hover:border-neutral-500">
+          <h2 class="text-white font-bold text-lg">Página Web, Agrinho 2025</h2>
+
+          <img
+            src="assets/examples/image.png"
+            class="w-full rounded-xl p-3"
+            alt=""
+          />
+
+          <p class="text-neutral-500 text-sm">
+            Esse projeto foi um site/página web desenvolvido para o concurso
+            Agrinho de 2025, baseando-se no tema proposto "Festejando a conexão
+            campo-cidade". Meu projeto foi o vencedor em 1° Lugar pelo Núcleo de
+            Educação de Ponta Grossa.
+          </p>
+
+          <a href="https://github.com/kev1n999/agrinho-2025-ctg4">
+            <button
+              class="transition-all duration-200 hover:bg-neutral-600 rounded-xl h-10 w-full bg-neutral-700 text-white border-2 border-neutral-500 cursor-pointer mt-3"
+            >
+              Ver projeto
+            </button>
+          </a>
+        </div>
+
+        <div class="bg-neutral-800 rounded-2xl p-5 border-solid border-2 border-transparent transition-all duration-300 hover:border-neutral-500">
+          <h2 class="text-white font-bold text-lg">
+            Bot - Escritório de Contabilidade
+          </h2>
+
+          <img
+            src="assets/examples/bot-contabilidade.png"
+            class="w-full rounded-xl p-3"
+            alt=""
+          />
+
+          <p class="text-neutral-500 text-sm">
+            Bot de Discord desenvolvido para um escritório de contabilidade com
+            foco em: Atendimento via tickets, Sistema de bate-ponto,
+            Gerenciamento de tickets, Sistema de avaliação, Relatórios HTML e
+            Registro via Google Sheet.
+          </p>
+
+          <a href="https://github.com/kev1n999/bot-contabilidade">
+            <button
+              class="transition-all duration-200 hover:bg-neutral-600 rounded-xl h-10 w-full bg-neutral-700 text-white border-2 border-neutral-500 cursor-pointer mt-3"
+            >
+              Ver projeto
+            </button></a
+          >
+        </div>
+
+        <div class="bg-neutral-800 rounded-2xl p-5 border-solid border-2 border-transparent transition-all duration-300 hover:border-neutral-500">
+          <h2 class="text-white font-bold text-lg">
+            Boilerplate - Bots de Discord em Python
+          </h2>
+
+          <img
+            src="assets/examples/discord-bot-boilerplate.png"
+            class="w-full rounded-xl p-3"
+            alt=""
+          />
+
+          <p class="text-neutral-500 text-sm">
+            Esse projeto é uma base para acelerar o desenvolvimento de bots no
+            Discord utilizando Python e a biblioteca discord.py, de forma
+            estruturada e organizada.
+          </p>
+
+          <a href="https://github.com/kev1n999/discord.py-boilerplate">
+            <button
+              class="transition-all duration-200 hover:bg-neutral-600 rounded-xl h-10 w-full bg-neutral-700 text-white border-2 border-neutral-500 cursor-pointer mt-3"
+            >
+              Ver projeto
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
     <footer
-      class="flex justify-center items-center flex-col bg-neutral-800 h-[150px] border-t-solid border-t-2 border-t-neutral-700"
+      class="flex justify-center items-center flex-col bg-neutral-800 h-32 border-t-2 border-neutral-700 mt-10"
     >
-      <span class="text-neutral-500">
+      <span class="text-neutral-500 text-center text-sm">
         Kevin Fernando, Todos os direitos reservados.
       </span>
     </footer>
 
     <a
-      href="https://wa.me/5511999999999"
+      href="https://wa.me/5542998505956"
       target="_blank"
-      class="fixed top-[50%] right-4 z-50"
+      class="fixed bottom-5 right-5 z-50"
     >
       <img
         src="assets/icons/whatsapp_green.png"
         alt="WhatsApp"
-        class="h-[55px] transition-all duration-300 hover:scale-110 rounded-full"
+        class="h-14 transition-all duration-300 hover:scale-110 rounded-full"
       />
     </a>
   </body>
